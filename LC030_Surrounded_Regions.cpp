@@ -52,9 +52,8 @@ public:
                         loc.first = i;
                         loc.second = j;
                         myq.push(loc);
-                        //cout << "blah2" << endl;
+                       
                         while(!myq.empty()){
-                            //cout << "blah3" << endl;
                             int x = myq.front().first;
                             int y = myq.front().second;
                             if(validLocation(x+1,y,row,col)&& board[x+1][y] =='O'){

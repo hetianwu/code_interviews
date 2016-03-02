@@ -17,3 +17,28 @@ int coinchange2(vector<int> &A, int B) {
 int main(){
 	return 0;
 }
+
+bool increasingTriplet(vector<int>& nums) {
+        int a1,a2,a3;
+        if(nums.size()<3){
+            return false;
+        }
+        a1 = INT_MAX;
+        a2 = INT_MAX;
+        for(int i = 0;i<nums.size();i++){
+            if(nums[i]<a1){
+                a2 = INT_MAX;
+                a1 = nums[i];
+                
+            }else if(nums[i]<a2&& nums[i]>a1){
+                a2 = nums[i];
+            }
+            if(nums[i]>a2){
+                cout << nums[i] << a1 << a2;
+                return true;
+                
+            }
+        }
+        return false;
+        
+    }

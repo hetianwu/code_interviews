@@ -39,6 +39,6 @@ int lengthOfLIS(vector<int>& nums) {
         // longest one, then we update ret to be this value.
         ret = max(ret,dp[i]);
     }
-    return ret;
+    return ret; 
         
 }

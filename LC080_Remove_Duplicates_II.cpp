@@ -16,7 +16,7 @@ int removeDuplicates(vector<int>& nums) {
         int size = nums.size();
         if(size<3){
             return size;
-        }
+        } 
         int next_index = 2;
         
         int prepre = nums[0];
